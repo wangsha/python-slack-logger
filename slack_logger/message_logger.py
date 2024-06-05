@@ -134,7 +134,7 @@ class SlackLogger:
 
         _description = ""
         if description is not None:
-            _description = str(description)
+            _description = str(description)[0:2999]
 
         _level = level
         if _level is None:
